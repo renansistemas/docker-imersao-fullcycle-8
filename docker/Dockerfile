@@ -2,4 +2,4 @@ FROM node:20
 
 USER node
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "node", "/home/node/app/index.js" ]
