@@ -1,7 +1,11 @@
 FROM node:20
 
-USER node
-
 WORKDIR /home/node/app
+
+COPY . .
+
+RUN npm install
+
+USER node
 
 CMD [ "node", "/home/node/app/index.js" ]
